@@ -1,0 +1,1072 @@
+{
+  "id": "52cef5d7-c117-40eb-b6ba-66e023fb47e2",
+  "version": "2.0",
+  "name": "a4",
+  "url": "https://www.costco.ca/",
+  "tests": [{
+    "id": "7d102a90-4316-4063-a7dd-daac935f1064",
+    "name": "SearchForExistingItem",
+    "commands": [{
+      "id": "9dcae998-b6f7-4b4c-989b-fb32ed891108",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6186299c-c1e2-49e8-8b06-19745df319ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c2c1bdc-a826-496d-b113-dcce4ed70c41",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6dc4080-6b40-41b4-8c95-963b844a6d91",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "Chicken"
+    }, {
+      "id": "3b27941c-ee12-4719-a879-6d8f1bb9c393",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f8ff2d56-b020-4e25-8033-3e59fc25214b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,421)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ed3f453-0439-4cb1-bd1b-4f0b78a491b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Master’s Best Friend Chicken Jerky, 1 kg (2.2 lb)",
+      "targets": [
+        ["linkText=Master’s Best Friend Chicken Jerky, 1 kg (2.2 lb)", "linkText"],
+        ["css=.product:nth-child(1) .caption a", "css:finder"],
+        ["xpath=//a[contains(text(),'Master’s Best Friend Chicken Jerky, 1 kg (2.2 lb)')]", "xpath:link"],
+        ["xpath=//div[@id='search-results']/div[4]/div/div/div[2]/div[2]/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/master%e2%80%99s-best-friend-chicken-jerky%2c-1-kg-(2.2-lb).product.100148952.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Master’s Best Friend Chicken Jerky, 1 kg (2.2 lb)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7e0e544-cdde-4d76-9fe5-0573649e5042",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(2)",
+      "targets": [],
+      "value": "Master’s Best Friend Chicken Jerky, 1 kg (2.2 lb)"
+    }]
+  }, {
+    "id": "ca454ac6-9027-417c-9250-bd0c4090e128",
+    "name": "SearchForNonExistingItem",
+    "commands": [{
+      "id": "71f20861-cdfe-49d1-9dc2-3a8e8dc63b00",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6f745ab-7ce7-41c6-a392-e4e0e57c7667",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3f71079-1818-4760-9f80-38f7ed554892",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c67e2e5-faa4-4424-aa75-5db665a7946f",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "itemthatdoesntexistgshdflkgjshdlfgkjasdfasd"
+    }, {
+      "id": "8280603b-59cb-4aff-a6fd-f01de4871693",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "e4d030cc-3271-4bb4-a5cd-fdd61375f749",
+    "name": "SearchForEmptyItem",
+    "commands": [{
+      "id": "c5b29504-5b1c-43b1-b17c-44d9f3f2af15",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9af9cad1-5f07-410a-ab30-f726ee64474f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "031612d1-4073-4dd2-877d-16626f1f7a36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-search-thin",
+      "targets": [
+        ["css=.co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bbd85da-019f-40da-b4d5-4df0e2d8665a",
+      "comment": "Ensure search label is empty",
+      "command": "assertValue",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9ec5f745-a475-4480-88cb-d22d879d4573",
+    "name": "Add1ItemToCart",
+    "commands": [{
+      "id": "86e79ed4-49e9-4fdf-b44b-36b9e1c2372e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/bothwell-cheese-snack-variety-pack-3.6-kg-(7.9-lb).product.4000065342.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a086000c-4120-4f98-b4df-1ce2b1b8605f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06e2d3c8-1158-4bfd-a269-ebcaa4a05db2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Tires",
+      "targets": [
+        ["linkText=Tires", "linkText"],
+        ["css=.nav-item:nth-child(18) > .nav-flyout", "css:finder"],
+        ["xpath=(//a[contains(text(),'Tires')])[6]", "xpath:link"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://tires.costco.ca/Home')])[2]", "xpath:href"],
+        ["xpath=//div[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e2ed160-4fca-492f-aabe-a2ddf42ec6de",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-btn",
+      "targets": [
+        ["id=add-to-cart-btn", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#add-to-cart-btn", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='add-to-cart']/input", "xpath:idRelative"],
+        ["xpath=//ul/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efdc0fb-273f-409f-8446-0ed19f2f7091",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a > .btn",
+      "targets": [
+        ["css=a > .btn", "css:finder"],
+        ["xpath=//div[@id='costcoModalText']/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f2b4cd1-a1bc-4a98-90ae-d65fc121c677",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .btn",
+      "targets": [
+        ["css=a > .btn", "css:finder"],
+        ["xpath=//div[@id='costcoModalText']/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3746d41a-583b-4b15-bc76-c5f7236d5d33",
+      "comment": "Check to see if item is in shopping cart",
+      "command": "assertElementPresent",
+      "target": "linkText=Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)",
+      "targets": [
+        ["linkText=Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)", "linkText"],
+        ["css=#product-name_1927216958 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)')]", "xpath:link"],
+        ["xpath=//h3[@id='product-name_1927216958']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.ca/.product.1698042.html')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be50651e-b8f2-4544-b111-b54d7c634af9",
+      "comment": "Check to see if item has a quantity of 1 (cart must be empty before running test)",
+      "command": "assertValue",
+      "target": "id=quantity_1",
+      "targets": [],
+      "value": "1"
+    }]
+  }, {
+    "id": "b38102ca-3659-4f6c-81c6-c2148228fd15",
+    "name": "Add10ItemsToCart",
+    "commands": [{
+      "id": "3b545e02-4fb9-40bd-a5e4-e3987d6acf3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/bothwell-cheese-snack-variety-pack-3.6-kg-(7.9-lb).product.4000065342.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afec1d48-311e-4525-8f84-7f407775f389",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9a368ac-066f-4053-8a32-ceed38f9cb58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a763bcfc-c9dd-4359-b4c1-12246e6235f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6fa1827-80f1-436c-a151-66cd90bcfb2f",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "834d27cd-b676-4bf0-baec-c295d09ee782",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "052f3d98-51dd-4e3c-a5bb-20ce39834c89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1876dd00-d847-49da-81a9-237b565e1380",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e084169-9d22-4f2f-9dc5-483cf286fa1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f39468-fee4-4cf0-a387-98ca901ef4b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e56f4066-2409-4d53-93da-00f28eb94815",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-btn",
+      "targets": [
+        ["id=add-to-cart-btn", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#add-to-cart-btn", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='add-to-cart']/input", "xpath:idRelative"],
+        ["xpath=//ul/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78993d74-7f8d-4ac3-88f7-2066440e6167",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .btn",
+      "targets": [
+        ["css=a > .btn", "css:finder"],
+        ["xpath=//div[@id='costcoModalText']/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1312941-bd1f-47f0-a9d7-b0c950e6596e",
+      "comment": "Check to see if item is in shopping cart",
+      "command": "assertElementPresent",
+      "target": "linkText=Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)",
+      "targets": [
+        ["linkText=Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)", "linkText"],
+        ["css=#product-name_1927217068 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)')]", "xpath:link"],
+        ["xpath=//h3[@id='product-name_1927217068']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costco.ca/.product.1698042.html')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bothwell Cheese Snack Variety Pack 3.6 kg (7.9 lb)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba97586-c777-4548-91f8-a5c8789212c3",
+      "comment": "Check to see if item has a quantity of 10 (cart must be empty before running test)",
+      "command": "assertValue",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "10"
+    }]
+  }, {
+    "id": "07bbd3cd-e59f-4a3c-b495-1e2f0d5c193d",
+    "name": "Remove1ItemFromCart",
+    "commands": [{
+      "id": "61577727-731c-4df2-a2b1-b0fe36d60bea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bc14027-974e-4011-bc1a-bf5c256e59c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7984051e-4cc2-4a1c-a753-5f92f12b0b4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd668cf-71c4-4ae4-8b13-b390af752baf",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "Beef"
+    }, {
+      "id": "21d2c6b1-9154-4ea0-a703-fe43a7c9b31f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f5146f80-28bf-4ef4-abff-b1b13aa8d1b7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,771)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68c421ce-0a4a-49f7-943c-e317ab70d4bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-0 > .co-expand",
+      "targets": [
+        ["css=#add-0 > .co-expand", "css:finder"],
+        ["xpath=//button[@id='add-0']/i", "xpath:idRelative"],
+        ["xpath=//button[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe241e03-3c05-4366-ad8b-012df1275966",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-0",
+      "targets": [
+        ["id=add-0", "id"],
+        ["css=#add-0", "css:finder"],
+        ["xpath=//button[@id='add-0']", "xpath:attributes"],
+        ["xpath=//div[@id='add-div-0']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1777c3ff-77e7-41f5-945b-1fd680a7ede6",
+      "comment": "",
+      "command": "click",
+      "target": "id=addbutton-0",
+      "targets": [
+        ["id=addbutton-0", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#addbutton-0", "css:finder"],
+        ["xpath=//button[@id='addbutton-0']", "xpath:attributes"],
+        ["xpath=//div[@id='addButtonContainer-0']/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cdeb2f4-f568-4909-a5a5-779a3e381bd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-d",
+      "targets": [
+        ["id=cart-d", "id"],
+        ["css=#cart-d", "css:finder"],
+        ["xpath=//a[@id='cart-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/CheckoutCartView')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f181e4ca-a010-441f-9113-cb162de3d6b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be919581-f499-41df-81bc-c5603a833852",
+      "comment": "",
+      "command": "click",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f3fe6c-8573-4a35-bf99-5f9afb91d121",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67a6dbd6-8831-4c23-a350-5e8c253e7365",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table-cell > a > .bc-logo",
+      "targets": [
+        ["css=.table-cell > a > .bc-logo", "css:finder"],
+        ["xpath=(//img[@alt='Costco Wholesale '])[2]", "xpath:img"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35c91d8-7462-40e5-a040-d68afda0461a",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-d",
+      "targets": [
+        ["id=cart-d", "id"],
+        ["css=#cart-d", "css:finder"],
+        ["xpath=//a[@id='cart-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/CheckoutCartView')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70ba522e-b970-4c46-8bc9-6311e6fd39b7",
+      "comment": "Ensure quantity of item is 3 (make sure cart is empty before running test)",
+      "command": "assertValue",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "2"
+    }]
+  }, {
+    "id": "d1ca1d59-5286-4641-8ec5-c12f9402461c",
+    "name": "RemoveAllFromCart",
+    "commands": [{
+      "id": "7ea2d489-9fb2-4a15-8cf1-80d565ac5e5a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7868e3ea-e250-4c79-a5f8-9a4f2fb8008e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "502572c3-ed38-4da3-8a7d-a8faf62e1e7f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_3",
+      "targets": [
+        ["id=Home_Ancillary_3", "id"],
+        ["linkText=Pharmacy", "linkText"],
+        ["css=#Home_Ancillary_3", "css:finder"],
+        ["xpath=(//a[contains(text(),'Pharmacy')])[4]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_3']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costcopharmacy.ca/')])[7]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a98aa3b-5775-4fce-b7c8-abdfecd6824b",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7c5a9f3-8558-4505-82b8-685adde8f034",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "Oranges"
+    }, {
+      "id": "b8de2d15-0101-4e39-b208-a00eae7c5b61",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "57781e7b-a545-4c9f-b918-f02c058a461c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dole Mandarin Oranges, 20 × 107 mL",
+      "targets": [
+        ["linkText=Dole Mandarin Oranges, 20 × 107 mL", "linkText"],
+        ["css=.product:nth-child(5) .description > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dole Mandarin Oranges, 20 × 107 mL')]", "xpath:link"],
+        ["xpath=//div[@id='search-results']/div[4]/div[4]/div/div[2]/div[2]/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/dole-mandarin-oranges%2c-20-%c3%97-107-ml.product.100538798.html')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/div[2]/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dole Mandarin Oranges, 20 × 107 mL')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d518bc23-8fd6-484e-9650-8ebd0b20d9e9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,53)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3647b2c7-ae98-4958-939d-61ac179167ce",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,268)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a587a343-5705-487b-9df9-cce9585ba502",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a9398ca-6798-4282-81ac-61f8ebf9ae7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d1061a1-33d4-460a-9432-ac6f2b2d3aac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "265410f5-9214-4bee-b66e-b55b0d481d77",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.co-expand",
+      "targets": [
+        ["css=.co-expand", "css:finder"],
+        ["xpath=//button[@id='plusQty']/em", "xpath:idRelative"],
+        ["xpath=//button[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe1591a0-cd01-41f1-9b39-f9be7e80bb59",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-btn",
+      "targets": [
+        ["id=add-to-cart-btn", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#add-to-cart-btn", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='add-to-cart']/input", "xpath:idRelative"],
+        ["xpath=//ul/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75a614cb-8c8e-460c-9d3e-3f5fc4c4dfc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .btn",
+      "targets": [
+        ["css=a > .btn", "css:finder"],
+        ["xpath=//div[@id='costcoModalText']/div[2]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ee17e23-3565-42c5-83f1-b19dfc17f063",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove-serial_1925725111",
+      "targets": [
+        ["id=remove-serial_1925725111", "id"],
+        ["css=#remove-serial_1925725111", "css:finder"],
+        ["xpath=//span[@id='remove-serial_1925725111']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div[3]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "504ac126-a43b-4d14-b7c9-737e6732346f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-d",
+      "targets": [
+        ["id=cart-d", "id"],
+        ["css=#cart-d", "css:finder"],
+        ["xpath=//a[@id='cart-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/CheckoutCartView')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9db1f8e6-3634-4a3d-b6bf-271b3ab2fb86",
+      "comment": "Ensure cart is empty after adding item and removing it (make sure cart is empty before running test)",
+      "command": "assertElementPresent",
+      "target": "css=#empty-cart-id > .body-copy",
+      "targets": [
+        ["css=#empty-cart-id > .body-copy", "css:finder"],
+        ["xpath=//div[@id='empty-cart-id']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bcfa2f00-440d-4867-b7c8-9a42c14d81c6",
+    "name": "ChangeToValidPostalCode",
+    "commands": [{
+      "id": "55d1e5be-a7b0-43bf-aa35-fc102ce44f8d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4d4f11c-ed20-4970-98a7-b30fee66cc0d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "777ae436-a8b0-48ec-9251-184907cf4941",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_2",
+      "targets": [
+        ["id=Home_Ancillary_2", "id"],
+        ["linkText=Business Centre", "linkText"],
+        ["css=#Home_Ancillary_2", "css:finder"],
+        ["xpath=(//a[contains(text(),'Business Centre')])[2]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_2']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costcobusinesscentre.ca')])[15]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5e42531-9b47-4179-9fd1-5379a9bc2d60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1jvjmvl > .MuiButtonBase-root",
+      "targets": [
+        ["css=.css-1jvjmvl > .MuiButtonBase-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//nav[@id='deliveryLocation']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'M4V 2H7')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d590561-4b44-4272-a435-b3a8e9b27c65",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "T2Y 3M6"
+    }, {
+      "id": "7785cfb7-ec21-4064-9c24-1382d8377885",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-primary",
+      "targets": [
+        ["css=.MuiButton-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change Delivery Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b429bd0-283e-4a43-b06c-d6d8962efd55",
+      "comment": "Check that new delivery location matches valid postal code",
+      "command": "assertText",
+      "target": "css=.css-1jvjmvl > .MuiButtonBase-root",
+      "targets": [],
+      "value": "T2Y 3M6"
+    }]
+  }, {
+    "id": "f0e4c2d5-c074-4b47-9828-b9dedbc9755f",
+    "name": "ChangeToInvalidPostalCode",
+    "commands": [{
+      "id": "e589e57e-4263-46bb-ba26-d0ef22c9371c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24c6c23a-8364-4d1b-9dfe-ba65b0be2117",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d566d66-b970-4cb4-a422-0c9cc662b14f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#slick-slide00 > .visible-xl",
+      "targets": [
+        ["css=#slick-slide00 > .visible-xl", "css:finder"],
+        ["xpath=//img[@alt='Gear up for Outdoor Adventures!\nWhile quantities last\nShop now']", "xpath:img"],
+        ["xpath=//a[@id='slick-slide00']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed27181e-da67-48d7-8844-281553c48e54",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#slick-slide00 > .visible-xl",
+      "targets": [
+        ["css=#slick-slide00 > .visible-xl", "css:finder"],
+        ["xpath=//img[@alt='Gear up for Outdoor Adventures!\nWhile quantities last\nShop now']", "xpath:img"],
+        ["xpath=//a[@id='slick-slide00']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda46d6d-c1a8-4e1f-9137-769651345e82",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-1jvjmvl > .MuiButtonBase-root",
+      "targets": [
+        ["css=.css-1jvjmvl > .MuiButtonBase-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//nav[@id='deliveryLocation']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'T2Y 3M6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92049b37-cfdd-4471-85f3-5a32a17d90f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1jvjmvl > .MuiButtonBase-root",
+      "targets": [
+        ["css=.css-1jvjmvl > .MuiButtonBase-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//nav[@id='deliveryLocation']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'T2Y 3M6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4defe18-a37d-4850-9db4-29d524f1c501",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Z9Z 9Z9"
+    }, {
+      "id": "b07026b6-a0d5-4ccb-8284-125fafab7cd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-primary",
+      "targets": [
+        ["css=.MuiButton-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change Delivery Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff876b70-142a-4b4d-8dd0-5638964e6bfd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-primary",
+      "targets": [
+        ["css=.MuiButton-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change Delivery Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d7df45f-8108-475b-a385-c65526944f6a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-primary",
+      "targets": [
+        ["css=.MuiButton-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change Delivery Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf74d3ba-34b2-4372-a708-22e947a969a4",
+      "comment": "Make sure invalid postal code alert appears",
+      "command": "assertElementPresent",
+      "target": "id=zipCode-helper-text",
+      "targets": [
+        ["id=zipCode-helper-text", "id"],
+        ["css=#zipCode-helper-text", "css:finder"],
+        ["xpath=//p[@id='zipCode-helper-text']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Please enter a valid Postal code.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "529b8cdc-2522-458c-b72b-45d13da48609",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7d102a90-4316-4063-a7dd-daac935f1064"]
+  }],
+  "urls": ["https://www.costco.ca/", "https://www.costco.ca/bothwell-cheese-snack-variety-pack-3.6-kg-(7.9-lb).product.4000065342.html"],
+  "plugins": []
+}

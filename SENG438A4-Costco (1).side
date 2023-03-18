@@ -1,0 +1,576 @@
+{
+  "id": "dc636bcd-7e95-40c9-9def-bce911b64fa7",
+  "version": "2.0",
+  "name": "SENG438A4-Costco",
+  "url": "https://www.costco.ca/?langId=-24",
+  "tests": [{
+    "id": "265f3803-a868-4448-acac-267c621ce0de",
+    "name": "Invalid Login",
+    "commands": [{
+      "id": "19effafe-f803-4f3a-af51-c73aa2ac3c42",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?langId=-24",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29e9f382-6b23-4b89-8b69-43b9d55cfb07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1812deb8-2c4e-4fe2-a63a-51b6f43e00c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_sign_in",
+      "targets": [
+        ["id=header_sign_in", "id"],
+        ["linkText=Sign In / Register", "linkText"],
+        ["css=#header_sign_in", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In / Register')]", "xpath:link"],
+        ["xpath=//a[@id='header_sign_in']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In / Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54851737-a079-4a4b-8e73-174bc8963dc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mujtnyhrbtgervfecdvbgtdhyr@gmail.com"
+    }, {
+      "id": "956b1569-1c15-4c2f-98a9-4a2f09bf433c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "tdgrfvsvybtfuhvdrgcs"
+    }, {
+      "id": "89ed9487-8899-4b86-9423-0ddafcd75096",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ea1ce36-c662-4d64-bfaf-ec9db2e62201",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pageLevel > p",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1e18a367-956e-4bda-9589-f0a44ddf30aa",
+    "name": "Valid Login",
+    "commands": [{
+      "id": "47948b44-0999-4e8c-8b65-4e225bbfaeb5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?langId=-24",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5eb08e0-f42d-4a40-88ab-95e7bd2a0eb9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a8797d7-5add-4ffb-9ee0-c1ddba151058",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_sign_in",
+      "targets": [
+        ["id=header_sign_in", "id"],
+        ["linkText=Sign In / Register", "linkText"],
+        ["css=#header_sign_in", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In / Register')]", "xpath:link"],
+        ["xpath=//a[@id='header_sign_in']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In / Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8de2f1c-f058-485f-a851-db6e5717d6aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e04928d6-2362-47b3-9b38-6eefa9abe5b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "brian.nguy1en@gmail.com"
+    }, {
+      "id": "2e430b68-ac03-46d4-8abf-1713b3c89be9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7263142a-ade1-4a1e-ada2-61e7a40068c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Qwertyasdpop123*"
+    }, {
+      "id": "216dbaf5-35ae-4714-a574-fb92781798cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6963462e-f6f5-456a-aa00-4b45544f3f4f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.t1-style",
+      "targets": [
+        ["css=.t1-style", "css:finder"],
+        ["xpath=//div[@id='link-membership-interrupt']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Add Membership Number')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9a00a9c0-3853-4cc1-8c62-541e2d9e1bed",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.t1-style",
+      "targets": [
+        ["css=.t1-style", "css:finder"],
+        ["xpath=//div[@id='link-membership-interrupt']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Add Membership Number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "894c5517-e37c-487a-ab4c-0057ffa64c7a",
+    "name": "Invalid Postal Code",
+    "commands": [{
+      "id": "bd9468c9-005d-4197-87e6-1b720ac35c00",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?langId=-24",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2182e01c-06ae-48d8-ae78-805ee9261ce1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9210bcbf-3a1c-4051-8d82-4ef1b1f749a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b63eb2dd-0551-4813-afad-d5d0c5018b62",
+      "comment": "",
+      "command": "type",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "poiuytrewq"
+    }, {
+      "id": "6dcc3801-b25d-4d27-a64b-dff5a1889319",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4e3a4f9a-da35-4089-a48a-46e45f99c909",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,77)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af09397a-df69-4b2a-a279-ecd0ca8ad352",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#error-container > .form-group",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "02a159c7-3121-4ddd-9b0b-d94d360cde8a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#error-container > .form-group",
+      "targets": [
+        ["css=#error-container > .form-group", "css:finder"],
+        ["xpath=//div[@id='error-container']/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8626ac37-d691-411c-aa88-43a907c20564",
+    "name": "Valid Postal Code",
+    "commands": [{
+      "id": "cc0232da-bab9-4297-9b06-fc4a5af238fb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?langId=-24",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4e25fc2-06c3-4e91-9258-5021df0d7447",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4378380f-56a9-46c4-83d5-831f6205ee89",
+      "comment": "",
+      "command": "click",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef23d96-4984-4259-9a1b-f90d4af084a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "T2A1B3"
+    }, {
+      "id": "bd40c17f-48da-4583-b0d9-0e711ca1706b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=footer-search-field",
+      "targets": [
+        ["id=footer-search-field", "id"],
+        ["css=#footer-search-field", "css:finder"],
+        ["xpath=//input[@id='footer-search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='WarehouseSearchForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9474d2c0-bb26-47e2-8b1a-1b1b88acf5a9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,244)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8ff97b1-02c1-411b-a084-eca016628981",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=filter-option-switch",
+      "targets": [
+        ["id=filter-option-switch", "id"],
+        ["linkText=Show Filter Options", "linkText"],
+        ["css=#filter-option-switch", "css:finder"],
+        ["xpath=//a[contains(text(),'Show Filter Options')]", "xpath:link"],
+        ["xpath=//a[@id='filter-option-switch']", "xpath:attributes"],
+        ["xpath=//form[@id='warehouse-locator-search-form']/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show Filter Options')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4e1e30d0-4ef7-4a7c-9e44-82744c6b61f4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=warehouse-list",
+      "targets": [
+        ["id=warehouse-list", "id"],
+        ["css=#warehouse-list", "css:finder"],
+        ["xpath=//table[@id='warehouse-list']", "xpath:attributes"],
+        ["xpath=//div[@id='warehouse-list-container']/table", "xpath:idRelative"],
+        ["xpath=//table", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "84e3c0ea-45b1-4c22-9cd1-3785ecd32df5",
+    "name": "Invalid home address",
+    "commands": [{
+      "id": "4f69bd48-31b7-4e7c-bef7-57b84cb76a2b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?langId=-24",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c6df0c9-2de1-490d-8a7e-48e5678a2c5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90bed43e-cbc3-46b7-b64d-0046536b4835",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_1",
+      "targets": [
+        ["id=Home_Ancillary_1", "id"],
+        ["linkText=Same-Day", "linkText"],
+        ["css=#Home_Ancillary_1", "css:finder"],
+        ["xpath=(//a[contains(text(),'Same-Day')])[2]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_1']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sameday.costco.ca/?utm_source=nav&zipcode=M4V 2H7')])[3]", "xpath:href"],
+        ["xpath=//nav/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6e964e4-76f6-499a-b512-0fb027b7f608",
+      "comment": "",
+      "command": "type",
+      "target": "id=shopping-selector-postal-code",
+      "targets": [
+        ["id=shopping-selector-postal-code", "id"],
+        ["name=delivery-address", "name"],
+        ["css=#shopping-selector-postal-code", "css:finder"],
+        ["xpath=//input[@id='shopping-selector-postal-code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "poiuytrewq"
+    }, {
+      "id": "5a912fd1-0068-40bf-8a6e-76c4662e90fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"shopping-selector-list-submit\"]",
+      "targets": [
+        ["css=*[data-test=\"shopping-selector-list-submit\"]", "css:data-attr"],
+        ["id=shopping-selector-list-dismiss", "id"],
+        ["css=#shopping-selector-list-dismiss", "css:finder"],
+        ["xpath=//button[@id='shopping-selector-list-dismiss']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Start Shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d2cf701-57b4-4e24-bd29-7ad76cb0a739",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=selection-error-msg",
+      "targets": [
+        ["id=selection-error-msg", "id"],
+        ["css=#selection-error-msg", "css:finder"],
+        ["xpath=//span[@id='selection-error-msg']", "xpath:attributes"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter a valid address to continue')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b53d5ca7-fdea-4ea8-a318-781bfc587b6d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=selection-error-msg",
+      "targets": [
+        ["id=selection-error-msg", "id"],
+        ["css=#selection-error-msg", "css:finder"],
+        ["xpath=//span[@id='selection-error-msg']", "xpath:attributes"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter a valid address to continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2e428ef7-872b-4602-9959-a07c5059b249",
+    "name": "Valid home address",
+    "commands": [{
+      "id": "d72fe468-85f7-436b-8687-1748a930a301",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcbbc85b-aba3-4a28-9b94-96c88e8cd976",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21a0a48b-8a94-4c47-8bda-c5d4103ae126",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_1",
+      "targets": [
+        ["id=Home_Ancillary_1", "id"],
+        ["linkText=Same-Day", "linkText"],
+        ["css=#Home_Ancillary_1", "css:finder"],
+        ["xpath=(//a[contains(text(),'Same-Day')])[2]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_1']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sameday.costco.ca/?utm_source=nav&zipcode=T2A 1B3')])[3]", "xpath:href"],
+        ["xpath=//nav/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a32e2e3-7adf-45e6-9dc6-8e3b15a20978",
+      "comment": "",
+      "command": "click",
+      "target": "id=shopping-selector-postal-code",
+      "targets": [
+        ["id=shopping-selector-postal-code", "id"],
+        ["name=delivery-address", "name"],
+        ["css=#shopping-selector-postal-code", "css:finder"],
+        ["xpath=//input[@id='shopping-selector-postal-code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fb80fd6-4ea5-4071-a762-c65fd202621e",
+      "comment": "",
+      "command": "type",
+      "target": "id=shopping-selector-postal-code",
+      "targets": [
+        ["id=shopping-selector-postal-code", "id"],
+        ["name=delivery-address", "name"],
+        ["css=#shopping-selector-postal-code", "css:finder"],
+        ["xpath=//input[@id='shopping-selector-postal-code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "107 hawkmere road"
+    }, {
+      "id": "31143a26-be18-4d6f-9764-b138ae56a256",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=shopping-selector-postal-code",
+      "targets": [
+        ["id=shopping-selector-postal-code", "id"],
+        ["name=delivery-address", "name"],
+        ["css=#shopping-selector-postal-code", "css:finder"],
+        ["xpath=//input[@id='shopping-selector-postal-code']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "63283f27-94c7-4d4b-8315-4b1c5d2a6554",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.button-container",
+      "targets": [
+        ["css=.button-container", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d03571f-f63d-4cf2-a8f0-11d4bce05da9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.costco.ca/", "https://www.costco.ca/?langId=-24"],
+  "plugins": []
+}
